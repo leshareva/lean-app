@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+    script(src="/socket.io/socket.io.js")
+    if (user)
+      script var name = "#{user.login || ''}";
+  body
+    block content
+    script(src="/js/main.js")

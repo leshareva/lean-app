@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  if (user)
+    p #{user.login}
+  br
+  form(action="/login" method="POST")
+    input(name="login" type="text" value="user")
+    input(name="password" type="password" value="user")
+    input(type="submit"  value="Login")
+  a(href="/logout")
+    button() Logout as User
+  br
+  button(onclick="test()") Проверка связи
