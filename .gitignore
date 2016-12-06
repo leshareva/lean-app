@@ -3,7 +3,10 @@
 # compiled output
 /dist
 /tmp
-
+/src/**/*.html
+/src/**/*.css
+/src/**/*.map
+/src/*.map
 # dependencies
 /node_modules
 /bower_components
