@@ -1,0 +1,52 @@
+body
+  padding: 0
+  margin: 0
+  font-family: "Arial", sans-serif
+a
+  text-decoration: none
+  cursor: pointer
+
+ul
+  margin: 0px
+  list-style: none
+  padding: 0px
+
+.wrapper
+  display: flex
+  flex-flow: row wrap
+  height: 100vh
+
+  > *
+    flex: 1 100%
+
+
+
+@media all and (min-width: 600px)
+  .aside
+    flex: 1 auto
+    height: 80vh
+  .aside-2
+    flex: 4 0px
+  .footer
+    height: 10vh
+  .header
+    background-color: #1f8bff
+    color: white
+    display: flex
+    height: 10vh
+    margin: 0
+
+
+@media all and (min-width: 800px)
+  .main
+    flex: 5 0px
+  .aside-1
+    order: 1
+  .main
+    order: 2
+  .aside-2
+    order: 3
+  .footer
+    order: 4
+
+
